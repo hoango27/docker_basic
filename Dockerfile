@@ -19,3 +19,4 @@ RUN git clone https://github.com/Itseez/opencv.git \
    && make && make install \
    && cd / \
    && rm -rf /opencv
+EXPOSE 9002
