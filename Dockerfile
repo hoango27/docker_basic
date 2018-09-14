@@ -4,6 +4,8 @@ FROM  ubuntu:latest
 
 # Prerequisites
 RUN apt-get update
+RUN apt-get purge git
+RUN apt-get install git
 #RUN apt-get install -y -q wget curl
 RUN apt-get install -y -q build-essential
 RUN apt-get install -y -q cmake
